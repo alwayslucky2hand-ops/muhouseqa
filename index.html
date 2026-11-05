@@ -9,7 +9,7 @@
 <title>GROWTHX-AI智能小幫手</title>
 <style>
   :root {
-    /* GROWTHX 主視覺色系 */
+     
     --gx-blue: #3A7CB8;
     --gx-green: #A3C644;
     --gx-yellow: #E9D53D;
@@ -20,7 +20,7 @@
     --bg-color: #ffffff;
     --chat-bg: #ffffff;
     
-    /* 極簡線條對話框風格 */
+     
     --client-msg-bg: #ffffff;
     --client-msg-border: #e0e0e0;
     --bot-msg-bg: #ffffff;
@@ -460,12 +460,12 @@
 
 
 <script>
-  // 前端雙棲環境常數定義
-  const GAS_WEB_URL = "https://script.google.com/macros/s/AKfycbySnz7p7mZ7sdL25cDVXDURYS7-X1VfWptWWcU343arJ8aPuLtbqLY-pPLV1YsDiip6Zw/exec";
+  
+  const GAS_WEB_URL = "https://script.google.com/macros/s/AKfycbwFY14LbxKrbsC8IjLxXousjQCOUdCSbJDfG6pOyR5b2MmYO0FMf4iSlE_2G_dEztI5/exec";
   const GAS_URL = GAS_WEB_URL;
 
 
-  // 通用前後端資料流呼叫通道 (支援雙棲環境與嚴格拆包裝)
+  
   function requestBackend(payload) {
     if (typeof google !== 'undefined' && google.script && google.script.run && typeof google.script.run.serverDispatcher === 'function') {
       return new Promise((resolve, reject) => {
@@ -509,7 +509,7 @@
   let lastWarRoomDate = "";
 
 
-  // 用來追蹤背景請求與延遲氣泡動畫
+  
   let clientPendingCount = 0;
   let warroomPendingCount = 0;
   let clientThinkingTimer = null;
